@@ -1,11 +1,17 @@
 {
   "name": "huggit",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Push code to Hugging Face and GitHub in one command",
   "main": "src/index.js",
   "bin": {
-    "huggit": "./bin/huggit.js"
+    "huggit": "bin/huggit.js"
   },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
