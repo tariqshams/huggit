@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Huggit - Sync Hugging Face and GitHub repositories effortlessly.">
+  <title>Huggit | CLI Sync Tool</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container animate">
+    <header>
+      <h1><span class="brand">Hug</span>git</h1>
+      <p>Synchronize Hugging Face and GitHub repositories with a single terminal command.</p>
+    </header>
+
+    <main>
+      <!-- INSTALL -->
+      <section style="margin-top: 4rem;">
+        <div class="code-box">
+          <span class="label">Install</span>
+          <code>npm install -g huggit</code>
+        </div>
+      </section>
+
+      <!-- INIT -->
+      <section id="setup">
+        <h2>01. Initialization</h2>
+        <p>Run the initialization command inside your local git repository. Huggit will guide you through connecting your origin repos.</p>
+        <div class="code-box">
+          <span class="label">Command</span>
+          <code>huggit init</code>
+        </div>
+        <ul>
+          <li>
+            <span class="title">Config Discovery</span>
+            Automatically identifies your git context and prompts for repository identifiers.
+          </li>
+          <li>
+            <span class="title">Security</span>
+            Creates a <code>.huggit</code> configuration and offers to add it to your <code>.gitignore</code> automatically.
+          </li>
+        </ul>
+      </section>
+
+      <!-- PUSH -->
+      <section id="sync">
+        <h2>02. Deployment</h2>
+        <p>Push your staged changes to both platforms simultaneously. No more manual remote management.</p>
+        <div class="code-box">
+          <span class="label">Command</span>
+          <code>huggit push</code>
+        </div>
+        <ul>
+          <li>
+            <span class="title">Branch Detection</span>
+            Intelligently detects your current branch and ensures both platforms stay in sync.
+          </li>
+          <li>
+            <span class="title">Atomic Sync</span>
+            Sequentially handles authentication and pushing for robust performance.
+          </li>
+        </ul>
+      </section>
+
+      <!-- PHILOSOPHY -->
+      <section id="philosophy">
+        <h2>03. Core Design</h2>
+        <p>Built for developers who value speed, minimal overhead, and clean terminal interfaces.</p>
+        <div class="code-box" style="border-style: dashed;">
+          <span class="label">Architecture</span>
+          <code style="color: var(--color-text-dim);">NodeJS + Commander + Chalk + Execa</code>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Source on <a href="https://github.com/tariqshams/huggit">GitHub</a>. Created by <a href="https://github.com/tariqshams">Tariq Shams</a>.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.75rem;">© 2025 HUGGIT PROJECT. APACHE-2.0 LICENSE.</p>
+    </footer>
+  </div>
+</body>
+</html>
