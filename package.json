@@ -1,0 +1,27 @@
+{
+  "name": "huggit",
+  "version": "1.0.0",
+  "description": "Push code to Hugging Face and GitHub in one command",
+  "main": "src/index.js",
+  "bin": {
+    "huggit": "./bin/huggit.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tariqshams/huggit.git"
+  },
+  "keywords": [],
+  "author": "Tariq Shams",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
+    "execa": "^9.6.1",
+    "fs-extra": "^11.3.3",
+    "inquirer": "^12.11.1"
+  }
+}
