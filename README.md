@@ -1,8 +1,13 @@
 # Huggit
 
-**Huggit** is a high-performance based on NodeJS CLI tool designed for developers who want to maintain their code across both **Hugging Face** and **GitHub** simultaneously. With one command, sync your progress to both platforms. Instead of using github actions to keep your hugging face repo updated, use huggit.
+**Huggit** is a high-performance CLI tool designed for developers who want to maintain their code across both **Hugging Face** and **GitHub** simultaneously.
 
-[Huggit](https://tariqshams.github.io/huggit/)
+With one command, sync your progress to both platforms. Instead of using github actions to keep your hugging face repo updated, use huggit.
+
+[Huggit website](https://tariqshams.github.io/huggit/)
+
+[NPM package](https://www.npmjs.com/package/huggit)
+
 ---
 
 ## For Users
@@ -61,6 +66,7 @@ We welcome contributions! To set up the project locally for development:
 - `src/index.js`: Main CLI command definitions.
 - `src/commands/`: Implementation of `init` and `push`.
 - `src/utils/theme.js`: Visual styling and terminal components.
+- `docs/`: Website and documentation for users and contributors.
 
 ### Development Workflow for Contributors
 - Follow the **senior-level code quality** standards: modular, clean, and well-commented.
